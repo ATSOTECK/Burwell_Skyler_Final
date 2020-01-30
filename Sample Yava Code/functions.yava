@@ -1,0 +1,43 @@
+//@author Skyler
+
+multiply(a: int, b: int): int {
+    return a * b
+}
+
+divide(a: int, b: int): int {
+    return a / b
+}
+
+square(a: int): int {
+    return a * a
+}
+
+sayHello() {
+    println("Hello")
+}
+
+fizzbuzz(start: int, stop: int) {
+    for (i in start .. stop) {
+        if (i % 3 == 0 && i % 5 == 0) {
+            println("Fizzbuzz")
+        } elif (i % 3 == 0) {
+            println("Fizz")
+        } elif (i % 5 == 0) {
+            println("Buzz")
+        }
+    }
+}
+
+bottles() {
+    for (i in 99 .. 1) {
+        if (i > 1) {
+            //var iMinusOne = i - 1 Does not get the type from the operator. Manually set the type for now.
+            var iMinusOne: int = i
+            iMinusOne--
+            println(i + " bottles of beer on the wall, " + i + " bottles of beer. Take one down and pass it around, " + iMinusOne +" bottles of beer on the wall.")
+        } else {
+            println("1 bottle of beer on the wall, 1 bottle of beer. Take one down and pass it around, no more bottles of beer on the wall.")
+        }
+    }
+}
+

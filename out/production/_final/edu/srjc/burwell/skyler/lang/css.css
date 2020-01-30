@@ -1,0 +1,81 @@
+#codeArea .text {
+    -fx-fill: #ebdbb2;
+}
+
+#codeArea .keyword {
+    -fx-fill: #fb4934;
+    /*-fx-font-weight: bold;*/
+}
+#codeArea .type {
+    -fx-fill: #fadb2f;
+    /*-fx-font-weight: bold;*/
+}
+#codeArea .varval {
+    /*-fx-fill: #4c859a;*/
+    -fx-fill: #689d6a;
+    /*-fx-font-weight: bold;*/
+}
+#codeArea .semicolon {
+    -fx-font-weight: bold;
+}
+#codeArea .paren {
+    -fx-fill: #cc241d;
+    -fx-font-weight: bold;
+}
+#codeArea .bracket {
+    -fx-fill: darkgreen;
+    -fx-font-weight: bold;
+}
+#codeArea .brace {
+    /*-fx-fill: #458588;*/
+    -fx-fill: #ebdbb2;
+    -fx-font-weight: bold;
+}
+#codeArea .string {
+    -fx-fill: #b8bb26;
+    /*-fx-fill: #8ec07c;*/
+}
+#codeArea .comment {
+	-fx-fill: #a8a8a8;
+}
+#codeArea .macro {
+	-fx-fill: #689d6a;
+}
+#codeArea .label {
+	-fx-fill: #d3869b;
+}
+#codeArea .function {
+	-fx-fill: #b8bb26;
+}
+#codeArea .number {
+	-fx-fill: #d3869b;
+}
+#codeArea .char {
+    -fx-fill: #b8bb26;
+}
+#codeArea .lineno {
+    /*-fx-background-color: #282828;*/
+    -fx-background-color: #32302f;
+}
+#codeArea .lineno .text {
+    /*-fx-background-color: #282828;*/
+    -fx-fill: #a8a8a8;
+}
+
+.caret {
+    -fx-stroke: #ebdbb2;
+}
+
+.paragraph-box:has-caret {
+    /*-fx-background-color: #f2f9fc;*/
+    /*-fx-background-color: #504945;*/
+    -fx-background-color: #3c3836;
+}
+
+.styled-text-area {
+    /*-fx-background-color: #282828;*/
+    -fx-background-color: #32302f;
+}
+.root {
+    -fx-background: #32302f;
+}

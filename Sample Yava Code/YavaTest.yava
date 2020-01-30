@@ -1,0 +1,142 @@
+//@author Skyler
+
+add(a: int, b: int): int {
+    return a + b
+}
+
+add(a: int64, b: int64): int64 {
+    return a + b
+}
+
+add(a: int64, b: int): int64 {
+    return a + b
+}
+
+/- This is a comment
+    /*
+        This is a nested comment
+    -/
+    //This is a normal comment
+*/
+
+use "functions"
+use "folder/foobar"
+use "functions" //will be ignored
+   
+start(): int {
+    println(1_000_000)
+    println("hello
+    there.")
+
+    var aaa = 1
+    var bbb = 2
+    var ccc = aaa + bbb
+
+    //var fff: int = "wee"
+    
+    var fff = 1.f
+    var ggg = fff + bbb //Should be type float.
+
+    fizzbuzz(#startAt 0, #stopAt 100)
+    bottles();
+    sayHello()
+    foobar()
+    println("Hello world from " + $file + " on line #" + $line + ", in function \"" + $function + "\"")
+    println("This was compiled with version " + $version + " and build " + $build + " of the Yava compiler.")
+    println("This was compiled for the " + $os + " operating system.")
+    var vr = 67
+    var intVar: int = 12
+    val v: int64 = 36
+    var thisShouldBeAFloat = 3.6
+    var thisShouldAlsoBeAFloat = 43.f
+    var thisShouldBeADouble = 2.d
+    val thisShouldBeAnInt = 312
+    var thisShouldBeABool = false
+    val thisShouldBeAString = "I'm a string"
+    var thisShouldBeAChar = 'c'
+    
+    //thisShouldBeAnInt = 12 //Successfully fails.
+    vr = 68
+
+    {
+        var thisShouldBeAnInt2 = 9
+    }
+
+    var ll = add(#firstNumber 2, #secondNumber 2)
+    
+    var x: int = 32
+    
+    if (x != 0) {
+        println("yo")
+    } else if (intVar == 12) {
+        println("yo12")
+    } elif (v == 13) {
+        println("yo13")
+    } else {
+        println("yo")
+    }
+    /-
+    if ($os == "Windows") {
+        println("Mac > Windows")
+    } elif ($os == "Mac OS X") {
+        println("Windows > Mac")
+    } elif ($os == "Linux") {
+        println("Linux master race!")
+    }
+    -/
+    until (x-- == 0) {
+        println(add(add(v + 2, 67 + intVar), x))
+        //x -= 1
+    }
+    
+    x = 0
+    println("x is " + x)
+    
+    do {
+        println(add(add(v + 2, 67 + intVar), x))
+        x -= 1
+    } while (x == 0)
+    
+    println("Returning " + add(add(v + 2, 67 + intVar), 3))
+    
+    while (x) {
+        //
+    }
+   
+    repeat (10) {
+        println("foo")
+        println("bar")
+    }
+    
+    for (var k: int = 0; k < 20; ++k) {
+        println("k is " + k);
+    }
+
+    for (var jk = 0; jk < 30; ++jk) {
+        println("jk is " + jk)
+    }
+    
+    for (1 .. 10) {
+        println("for")
+    }
+    
+    for (10 .. 1 step 5) {
+        println("rof")
+    }
+    
+    for (index in 10 .. 1) {
+        println("hvað er þetta? " + index)
+    }
+    
+    for (j in 0 .. 20 step 5) {
+        println("hvað er þetta? " + j)
+    }
+    
+    /-
+    forever {
+        println("yo what up")
+    }
+    -/
+    return add(add(intVar + 2, 67 + intVar), 3)
+}
+
